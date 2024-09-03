@@ -3,6 +3,7 @@ import NavBar from '../components/NavBar'
 import StripeCheckout from 'react-stripe-checkout'
 import { useNavigate } from 'react-router-dom'
 import useAuth from '../hooks/useAuth'
+import { HOST } from '../api'
 
 function MyAppointment() {
   const [appointment, setAppointment] = useState(null)

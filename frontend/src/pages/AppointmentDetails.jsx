@@ -7,6 +7,7 @@ import ReactCalendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css'
 import Draggable from 'react-draggable'
 import useAuth from '../hooks/useAuth'
+import { HOST } from '../api'
 
 const AppointmentDetails = () => {
   const { id } = useParams()

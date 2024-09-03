@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import NavBar from '../components/NavBar'
 import { useNavigate } from 'react-router-dom'
 import useAuth from '../hooks/useAuth'
+import { HOST } from '../api'
 
 const ManageAccounts = () => {
   const [counsellors, setCounsellors] = useState([])

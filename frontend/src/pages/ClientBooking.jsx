@@ -7,6 +7,7 @@ import SurveyQuestion from '../components/SurveyQuestion'
 import MainIssue from '../components/MainIssue'
 import ClientAppointmentReview from '../components/ClientAppointmentReview'
 import useAuth from '../hooks/useAuth'
+import { HOST } from '../api'
 
 function ClientBooking() {
   const { user, loading } = useAuth()

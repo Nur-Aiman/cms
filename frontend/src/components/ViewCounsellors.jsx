@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import 'tailwindcss/tailwind.css'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import { HOST } from '../api'
 
 const counsellorPicture =
   process.env.PUBLIC_URL + '/images/counsellor-picture.png'

@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { Tab, Switch } from '@headlessui/react'
 import NavBar from '../components/NavBar'
 import useAuth from '../hooks/useAuth'
+import { HOST } from '../api'
 
 const Appointments = () => {
   const [activeAppointments, setActiveAppointments] = useState([])

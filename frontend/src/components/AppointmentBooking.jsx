@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import ReactCalendar from 'react-calendar'
 import { add, format, differenceInMinutes } from 'date-fns'
 import 'tailwindcss/tailwind.css'
+import { HOST } from '../api'
 
 function AppointmentBooking({
   setSelectedDateTime,

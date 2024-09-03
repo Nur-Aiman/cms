@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import NavBar from '../components/NavBar'
 import { useNavigate } from 'react-router-dom'
 import useAuth from '../hooks/useAuth'
+import { HOST } from '../api'
 
 const counsellorPicture =
   process.env.PUBLIC_URL + '/images/counsellor-profile-photo.png'

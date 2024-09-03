@@ -6,6 +6,7 @@ import ViewCounsellors from '../components/ViewCounsellors'
 import Hero from '../components/Hero'
 import Testimonials from '../components/Testimonials'
 import useAuth from '../hooks/useAuth'
+import { HOST } from '../api'
 
 function Home() {
   const { user, loading } = useAuth()
