@@ -20,7 +20,7 @@ const ManageAccounts = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/admin/deleteClient/${id}`,
+        `${HOST}/admin/deleteClient/${id}`,
         {
           method: 'DELETE',
           headers: {
@@ -65,7 +65,7 @@ const ManageAccounts = () => {
   const fetchCounsellors = async () => {
     try {
       const response = await fetch(
-        'http://localhost:8080/client/counsellors-view',
+        `${HOST}/client/counsellors-view`,
         {
           method: 'GET',
           headers: {
@@ -91,7 +91,7 @@ const ManageAccounts = () => {
 
   const fetchClients = async () => {
     try {
-      const response = await fetch('http://localhost:8080/admin/clients-view', {
+      const response = await fetch(`${HOST}/admin/clients-view`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

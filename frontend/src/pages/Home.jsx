@@ -21,7 +21,7 @@ function Home() {
   const fetchCounsellors = async () => {
     try {
       const response = await fetch(
-        'http://localhost:8080/client/counsellors-view',
+        `${HOST}/client/counsellors-view`,
         {
           method: 'GET',
           headers: {

@@ -54,7 +54,7 @@ function ClientRegistration() {
 
   async function registerClient(event) {
     event.preventDefault()
-    const response = await fetch('http://localhost:8080/client/register', {
+    const response = await fetch(`${HOST}/client/register`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

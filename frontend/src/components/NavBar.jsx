@@ -21,11 +21,11 @@ const NavBar = ({ loggedInUser, setLoggedInUser }) => {
     }
     let url
     if (loggedInUser.role === 'client') {
-      url = 'http://localhost:8080/client/logout'
+      url = `${HOST}/client/logout`
     } else if (loggedInUser.role === 'counsellor') {
-      url = 'http://localhost:8080/counsellor/logout'
+      url = `${HOST}/counsellor/logout`
     } else if (loggedInUser.role === 'admin') {
-      url = 'http://localhost:8080/admin/logout'
+      url = `${HOST}/admin/logout`
     } else {
       console.error('Unknown user role:', loggedInUser.role)
       return

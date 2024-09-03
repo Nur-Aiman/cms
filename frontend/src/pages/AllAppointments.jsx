@@ -16,7 +16,7 @@ const Appointments = () => {
 
   const fetchAppointments = async (status, setAppointmentsFunc) => {
     const response = await fetch(
-      `http://localhost:8080/counsellor/appointments?status=${status}${
+      `${HOST}/counsellor/appointments?status=${status}${
         viewAll ? '' : `&counsellor=${loggedInUser.username}`
       }`,
       {

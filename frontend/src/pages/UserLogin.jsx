@@ -16,11 +16,11 @@ function UserLogin() {
 
     let url
     if (userType === 'client') {
-      url = 'http://localhost:8080/client/login'
+      url = `${HOST}/client/login`
     } else if (userType === 'counsellor') {
-      url = 'http://localhost:8080/counsellor/login'
+      url = `${HOST}/counsellor/login`
     } else if (userType === 'admin') {
-      url = 'http://localhost:8080/admin/login'
+      url = `${HOST}/admin/login`
     } else {
       alert('Please select a valid user type.')
       return

@@ -71,7 +71,7 @@ function MyAppointment() {
   const fetchAppointment = async () => {
     try {
       const response = await fetch(
-        'http://localhost:8080/client/appointment-view',
+        `${HOST}/client/appointment-view`,
         {
           method: 'GET',
           headers: {
@@ -140,7 +140,7 @@ function MyAppointment() {
   const handlePayment = async (token, addresses) => {
     try {
       const response = await fetch(
-        `http://localhost:8080/client/make-payment/${currentSessionId}`,
+        `${HOST}/client/make-payment/${currentSessionId}`,
         {
           method: 'PUT',
           headers: {

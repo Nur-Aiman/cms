@@ -62,7 +62,7 @@ const AppointmentDetails = () => {
 
   const fetchAppointmentDetails = async () => {
     const response = await fetch(
-      `http://localhost:8080/counsellor/appointment/${id}`,
+      `${HOST}/counsellor/appointment/${id}`,
       {
         method: 'GET',
         headers: {
@@ -122,7 +122,7 @@ const AppointmentDetails = () => {
 
   const confirmAppointment = async () => {
     const response = await fetch(
-      `http://localhost:8080/counsellor/appointment/${id}`,
+      `${HOST}/counsellor/appointment/${id}`,
       {
         method: 'PUT',
         headers: {
@@ -147,7 +147,7 @@ const AppointmentDetails = () => {
   const fetchCounsellorSession = async () => {
     try {
       const response = await fetch(
-        `http://localhost:8080/client/${appointmentDetails.counsellor_id}/sessions`,
+        `${HOST}/client/${appointmentDetails.counsellor_id}/sessions`,
         {
           method: 'GET',
           credentials: 'include',
@@ -169,7 +169,7 @@ const AppointmentDetails = () => {
       )
     ) {
       const response = await fetch(
-        `http://localhost:8080/counsellor/appointment-close/${id}`,
+        `${HOST}/counsellor/appointment-close/${id}`,
         {
           method: 'PUT',
           headers: {
@@ -196,7 +196,7 @@ const AppointmentDetails = () => {
 
   const bookNextSession = async () => {
     const response = await fetch(
-      `http://localhost:8080/counsellor/appointment-bookNextSession/${id}`,
+      `${HOST}/counsellor/appointment-bookNextSession/${id}`,
       {
         method: 'POST',
         headers: {
@@ -244,7 +244,7 @@ const AppointmentDetails = () => {
 
   const savePreAppointmentNote = async (sessionId, note) => {
     const response = await fetch(
-      `http://localhost:8080/counsellor/session/${sessionId}/note`,
+      `${HOST}/counsellor/session/${sessionId}/note`,
       {
         method: 'PUT',
         headers: {
@@ -264,7 +264,7 @@ const AppointmentDetails = () => {
 
   const saveCounselorFeedback = async (sessionId, feedback) => {
     const response = await fetch(
-      `http://localhost:8080/counsellor/session/${sessionId}/feedback`,
+      `${HOST}/counsellor/session/${sessionId}/feedback`,
       {
         method: 'PUT',
         headers: {

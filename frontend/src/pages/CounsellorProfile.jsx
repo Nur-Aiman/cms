@@ -65,7 +65,7 @@ const CounsellorProfile = () => {
   const fetchCounsellorData = async () => {
     try {
       const response = await fetch(
-        `http://localhost:8080/client/counsellors-view/${counsellorId}`
+        `${HOST}/client/counsellors-view/${counsellorId}`
       )
       if (!response.ok) {
         const errorData = await response.json()
@@ -100,7 +100,7 @@ const CounsellorProfile = () => {
 
   const fetchUserData = async () => {
     try {
-      const response = await fetch('http://localhost:8080/api/current_user', {
+      const response = await fetch(`${HOST}/api/current_user`, {
         method: 'GET',
         credentials: 'include',
       })
@@ -157,7 +157,7 @@ const CounsellorProfile = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/counsellor/${counsellorId}`,
+        `${HOST}/counsellor/${counsellorId}`,
         {
           method: 'PUT',
           credentials: 'include',

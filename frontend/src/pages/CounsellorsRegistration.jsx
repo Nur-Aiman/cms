@@ -96,7 +96,7 @@ function CounsellorRegistration() {
     }, {})
 
     const response = await fetch(
-      'http://localhost:8080/admin/registerCounsellor',
+      `${HOST}/admin/registerCounsellor`,
       {
         method: 'POST',
         headers: {

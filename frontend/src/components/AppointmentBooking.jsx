@@ -51,7 +51,7 @@ function AppointmentBooking({
     const fetchCounsellorSession = async () => {
       try {
         const response = await fetch(
-          `http://localhost:8080/client/${selectedCounsellor.id}/sessions`,
+          `${HOST}/client/${selectedCounsellor.id}/sessions`,
           {
             method: 'GET',
             credentials: 'include',
